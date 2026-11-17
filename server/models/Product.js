@@ -23,6 +23,10 @@ const productSchema = new mongoose.Schema({
     quantity: {
         type: Number,
         min: 0,
-        default: 0
+        default: 0,
+        validate: {
+            validator: Number.isInteger,
+            message: "Quantity must be a whole number"
+        }
     }
 });
