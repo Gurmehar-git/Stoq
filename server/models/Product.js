@@ -50,4 +50,11 @@ const productSchema = new mongoose.Schema({
             message: "Threshold must be a whole number"
         }
     }
-});
+},
+    {
+        timestamps: true
+    });
+// timestamps makes createdAt and updatedAt fields
+
+const Product = mongoose.model("Product", productSchema);
+module.exports = Product;
