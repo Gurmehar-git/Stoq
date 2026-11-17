@@ -29,7 +29,6 @@ function App() {
     <div>
       <h1>STOQ</h1>
       <p>Backend status: {status}</p>
-
       <button onClick={checkBackend}>
         Check Backend
       </button>
